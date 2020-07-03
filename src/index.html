@@ -154,56 +154,36 @@
                             <button type="button" class="messagesSubmitButton">Submit Message</button>
                         </div>
                     </div>
+                    <!-- EVENTS HEADING -->
+                    <div class="eventsList__Heading">
+                        <H2> EVENTS LIST What to do?.. What to do?</H2>
+                        <p>See all the other happenings you and your friends have planned</p>
+                    </div>
+                    <!-- ADD EVENTS BUTTON -->
+                    <div>
+                        <button type="button" id="eventsAddButton">Add Event Button</button>
+                    </div>  
                     <!-- EVENTS LIST-->
                     <article class="eventsList">
-                        <!-- EVENTS HEADING -->
-                        <div class="eventsList__Heading">
-                            <H2> EVENTS LIST What to do?.. What to do?</H2>
-                            <p>See all the other happenings you and your friends have planned</p>
-                        </div>
-                        <!-- ADD EVENTS BUTTON -->
-                        <div>
-                            <button type="button" class="eventsAddButton">Add Event Button</button>
-                        </div>  
+                        
                         <!--!!!!!!!!!!!!!!!!!!!!!!!-->
                         <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
-                        <section class="eventsList__Item">
-                            <!-- SINGLE EVENT DETAILS -->
-                            <div class="eventsList__Item__Content">
-                                <p>Event Name</p>
-                                <p>Event Location</p>
-                                <p>Event Date</p>
-                            </div>
-                            <!-- SINGLE EVENT DELETE BUTTON -->
-                            <div>
-                                <button type="button" class="eventsDeleteButton">Delete Event Button</button>
-                            </div>
-                        </section>
-                        <section class="eventsList__Item">
-                            <!-- SINGLE EVENT DETAILS -->
-                            <div class="eventsList__Item__Content">
-                                <p>Event Name</p>
-                                <p>Event Location</p>
-                                <p>Event Date</p>
-                            </div>
-                            <!-- SINGLE EVENT DELETE BUTTON -->
-                            <div>
-                                <button type="button" class="eventsDeleteButton">Delete Event Button</button>
-                            </div>
-                        </section>
-                        <section class="eventsList__Item">
-                            <!-- SINGLE EVENT DETAILS -->
-                            <div class="eventsList__Item__Content">
-                                <p>Event Name</p>
-                                <p>Event Location</p>
-                                <p>Event Date</p>
-                            </div>
-                            <!-- SINGLE EVENT DELETE BUTTON -->
-                            <div>
-                                <button type="button" class="eventsDeleteButton">Delete Event Button</button>
-                            </div>
-                        </section>
                     </article>
+                                         <!-- Tasks Form will initially be hidden -->
+                <div class="newEventContainer popupForm hidden">
+                    <div class="showPopupContent">
+                    <form class="newEventForm">
+                        <label for="newEventName">Name of Event:  </label>
+                        <input id="newEventName" name="newEventName" type="text" placeholder="Event Name"></input>
+                        <label for="newEventLocation">Location of Event:  </label>
+                        <input id="newEventLocation" name="newEventLocation" type="text" placeholder="Event Location"></input>
+                        <label for="newEventDate">Location of Event:  </label>
+                        <input id="newEventDate" name="newEventDate" type="date"></input>
+                        <button id="submitNewEvent" type="button">Save</button>
+                        <button id="cancelNewEvent" type="button">Cancel</button>
+                    </form>
+                    </div>
+                </div>
                 </div>
             </div>
 

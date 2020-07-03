@@ -42,29 +42,14 @@ const renderToDom = {
     },
     // end Sisi (tasks)
 
-    eventsList() {
-        // **TEST DATA - delete later
-        const eventsArray = [{
-            "id": 1,
-            "userId": 1,
-            "name": "first event ever ",
-            "location": "nextEvents section",
-            "eventDate": "01/01/01"
-          },
-          {
-            "id": 2,
-            "userId": 2,
-            "name": "2nd event to ever take place ",
-            "location": "1st event in the events list",
-            "eventDate": "02/02/02"
-          }]
-        // **
+    eventsList(eventsArray) {
 
-        eventsArray.sort((event1, event2) => new Date(event2.date) - new Date(event1.date))
-        console.log(eventsArray) // Remove this line later
+        eventsArray.sort((event1, event2) => new Date(event2.eventDate) - new Date(event1.eventDate))
+        console.log(eventsArray)
+        document.querySelector(".eventsList").innerHTML = ""
         eventsArray.forEach(event => {
             const eventHTML = domObject.eventComponent(event)
-            // document.querySelector(".eventsList").innerHTML += eventHTML
+            document.querySelector(".eventsList").innerHTML += eventHTML
         })
     },
 
