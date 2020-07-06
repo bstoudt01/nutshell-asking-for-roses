@@ -85,7 +85,7 @@ form {
     color: var(--med-blue);
 }
 
-.frontPage__button {
+button {
     background-color: var(--med-blue);
     color: black;
     width: 140px;
@@ -98,12 +98,12 @@ form {
         sans-serif;
 }
 
-.frontPage__button:disabled {
+button:disabled {
     background-color: var(--light-blue);
     color: gray;
 }
 
-.frontPage__button:hover:enabled {
+button:hover:enabled {
     background-color: var(--purple);
     color: var(--white);
 }

@@ -1,15 +1,13 @@
 header {
-    border: .2em solid black
+    border: .2em solid black;
+    border-radius: 5em;
     }
     
 footer {
     border: .2em solid black;
+    border-radius: 5em;
 }
 
-
-button {
-    margin: 1em;
-}
 
 .topContainer {
     display: flex;
@@ -23,29 +21,48 @@ button {
     flex: 3;
 }
 
-.friendsList {
-    border: .2em solid black;
-
+.listBorder {
+    border: .2em solid black ;
+    margin: 1em;
+    border-radius: 5px;
+   
 }
+
 .friendsList__Item {
-    border: .1em dotted black;
+    display: inline-block;
+    text-align: start;
+    border: .2em solid black;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
+
 
 }
 
 .nextEvents {
-    border: .2em solid black;
+display: flex;
 
 }
 .nextEvents__Item {
-    border: .1em dotted black;
+    border: .2em solid black;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
+
 
 }   
+.articlesList__Heading {
+    display: flex;
+justify-items: flex-end;
+}
 .articlesList {
-    border: .2em solid black;
     display: flex;
 }
 .articlesList__Item {
-    border: .1em dotted black;
+    border: .2em solid black;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
 
 }
 
@@ -60,24 +77,34 @@ button {
 }
 
 .messagesList__Item {
-border: .1em dotted black;
+    border: .2em solid black;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
+
 }
 
 .eventsList {
-    border: .2em solid black;
     display: flex;
+
 }
 
 .eventsList__Item {
-    border: .1em dotted black;
+    border: .2em solid black;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
+
 
 }
 
 .tasksList {
     display: flex;
-    border: .2em solid black;
 }
 .tasksList__Item {
-    border: .1em dotted black;
+    border: .2em solid black;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 1em;
 
 }
