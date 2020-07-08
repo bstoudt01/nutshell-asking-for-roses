@@ -117,7 +117,7 @@ const API = {
             body: JSON.stringify(messagesObject),
         });
     },
-     //responsible for running after the delete button is clicked
+     //responsible for running after the article delete button is clicked
          //created by Brett Stoudt
      deleteArticleEntry: (id) => {
         return fetch(`http://localhost:8088/articles/${id}`, {
@@ -125,6 +125,14 @@ const API = {
         }).then(response => response.json())
             .then(response => response)
     },
+    //responsible for running after events delete button is clicked
+         //created by Brett Stoudt
+         deleteEventsEntry: (id) => {
+            return fetch(`http://localhost:8088/events/${id}`, {
+                method: "DELETE",
+            }).then(response => response.json())
+                .then(response => response)
+        },
 
     // Sisi (delete for task)
     deleteTaskEntry (taskEntryId) {

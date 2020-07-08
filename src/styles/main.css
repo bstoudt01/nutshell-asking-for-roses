@@ -1,6 +1,6 @@
 @import url("registration.css");
 @import url("forms.css");
-
+@import url("dashboard.css");
 body {
     background-color: var(--gray);
     font-family: "Noto Sans JP", sans-serif;
