@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/dashboard.css">
 
     <title>Asking for Roses</title>
 </head>
@@ -59,11 +58,13 @@
         <header>
             <!-- LOGO -->
             <span>
-                <P>LOGO HERE</P><!-- LOGO IMAGE GOES HERE -->
+                <div class="login__logo">
+                    <img src="images/roses-logo.png" alt="Asking for Roses logo">
+                </div>
             </span>
             <!-- LOGOUT BUTTON -->
             <span>
-                <button type="button" class="logOutButton">Log Out</button>
+                <button type="button" class="logOutButton frontPage__button">Log Out</button>
             </span>
         </header>
 
@@ -73,52 +74,61 @@
             <div class="topContainer">
                 <!-- COLUMN LEFT HOLDS FRIENDS LIST AND NEXT EVENT -->
                 <div class="columnLeft">
-                    <!-- FRIENDS LIST -->
-                    <div class=friendsList__Heading>
-                        <H2>FRIENDS LIST Your Friends Are Here!</H2>
-                    </div>
-                    <article class="friendsList">
-                        <!-- THIS SECTION TO BE DYNAMICALLY CREATED  -->
-                    </article>
-
-                    <!-- NEXT SINGLE EVENT TO HAPPEN BASED ON A SORT OF DATE/TIME -->
-                    <article class="nextEvents">
-                        <!-- SINGLE EVENTS HEADING -->
-                        <div class=nextEvents__Heading>
-                            <H2>What to do?.. What to do?</H2>
-                            <p>This Next Adventure Awaits YOU!</p>
+                    <div class="listBorder">
+                        <!-- FRIENDS LIST -->
+                        <div class=friendsList__Heading>
+                            <H2>FRIENDS LIST Your Friends Are Here!</H2>
                         </div>
+                        <article class="friendsList">
+                            <!-- THIS SECTION TO BE DYNAMICALLY CREATED  -->
+                        </article>
+                    </div>
+                    <div class="blueline"></div>
+                    <!-- NEXT SINGLE EVENT TO HAPPEN BASED ON A SORT OF DATE/TIME -->
+                    <div class="listBorder">
+                        <article class="nextEvents">
+                            <!-- SINGLE EVENTS HEADING -->
+                            <div class=nextEvents__Heading>
+                                <H2>What to do?.. What to do?</H2>
+                                <p>This Next Adventure Awaits YOU!</p>
+                            </div>
                         
-                        <!--!!!!!!!!!!!!!!!!!!!!!!!-->
-                        <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
-                        <section class="nextEvents__Item">
-                            <!-- SINGLE EVENT DETAILS -->
-                            <div class="nextEvents__Item__Content">
-                                <p>Event Name</p>
-                                <p>Event Location</p>
-                                <p>Event Date</p>
-                            </div>
-                            <!-- SINGLE EVENT DELETE BUTTON -->
-                            <div>
-                                <button type="button" class="eventsDeleteButton">Delete Event Button</button>
-                            </div>
-                        </section>
-                    </article>
+                            <!--!!!!!!!!!!!!!!!!!!!!!!!-->
+                            <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
+                            <section class="nextEvents__Item">
+                                <!-- SINGLE EVENT DETAILS -->
+                                <div class="nextEvents__Item__Content">
+                                    <p>Event Name</p>
+                                    <p>Event Location</p>
+                                    <p>Event Date</p>
+                                </div>
+                                <!-- SINGLE EVENT DELETE BUTTON -->
+                                <div>
+                                    <button type="button" class="eventsDeleteButton">Delete Event Button</button>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                   
                 </div>
                 <!-- COLUMN RIGHT HOLDS ARTICLES LIST, MESSAGE BOARDS AND REAMINING EVENTS LIST -->
                 <div class="columnRight">
-                    <!-- ARTICLE LIST -->
-                    <div class=articleList__Heading>
-                        <h2>NEWS ARTICLES to Expand your Mind</h2>
-                        <!-- ADD ARTICLES BUTTON -->
-                        <div>
-                        <button type="button" id="articlesAddButton">Share A News Article</button>
+                    <div class="listBorder">
+                        <!-- ARTICLE LIST -->
+                        <div class=articleList__Heading>
+                            <h2>NEWS ARTICLES to Expand your Mind</h2>
+                            <!-- ADD ARTICLES BUTTON -->
+                            <div>
+                            <button type="button" id="articlesAddButton">Share A News Article</button>
+                            </div>
                         </div>
+                        <article class="articlesList">
+                            <!--!!!!!!!!!!!!!!!!!!!!!!!-->
+                            <!-- THIS REMAINING SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
+                        </article>
                     </div>
-                    <article class="articlesList">
-                        <!--!!!!!!!!!!!!!!!!!!!!!!!-->
-                        <!-- THIS REMAINING SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
-                    </article>
+                    <div class="blueline"></div>
+
                      <!-- Tasks Form will initially be hidden -->
                 <div class="newArticleContainer popupForm hidden">
                     <div class="showPopupContent">
@@ -134,96 +144,86 @@
                     </form>
                     </div>
                 </div>
-
-                    <!-- MESSAGING BOARD -->
-                    <div class="messagesBoard">
-                        <!-- MESSAGING BOARD HEADER -->
-                        <div class="messagesBoard__Heading">
-                            <h2>Asking for Roses MESSAGE BOARD</h2>
-                            <p>Please post SFW Content Only.. Thnx</p>
-                        </div>
-                        <article class="messagesList">
-                            <!--!!!!!!!!!!!!!!!!!!!!!!!-->
-                            <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
-                        </article>
-                        <div>
-                            <input type="hidden" id="messageId">
-                            <input type="text" name="messagesUserInput" id="messagesUserInput" placeholder="Send a message" >
-                        </div>
-                        <div>
-                            <button type="button" class="messagesSubmitButton">Submit Message</button>
+                    <div class="listBorder">
+                        <!-- MESSAGING BOARD -->
+                        <div class="messagesBoard">
+                            <!-- MESSAGING BOARD HEADER -->
+                            <div class="messagesBoard__Heading">
+                                <h2>Asking for Roses MESSAGE BOARD</h2>
+                                <p>Please post SFW Content Only.. Thnx</p>
+                            </div>
+                            <article class="messagesList">
+                                <!--!!!!!!!!!!!!!!!!!!!!!!!-->
+                                <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
+                            </article>
+                            <div>
+                                <input type="hidden" id="messageId">
+                                <input type="text" name="messagesUserInput" id="messagesUserInput" placeholder="Send a message" >
+                            </div>
+                            <div>
+                                <button type="button" class="messagesSubmitButton">Submit Message</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- EVENTS LIST-->
-                    <article class="eventsList">
-                        <!-- EVENTS HEADING -->
+                    <div class="blueline"></div>
+
+                    <div class="listBorder">
+                            <!-- EVENTS HEADING -->
                         <div class="eventsList__Heading">
                             <H2> EVENTS LIST What to do?.. What to do?</H2>
                             <p>See all the other happenings you and your friends have planned</p>
                         </div>
                         <!-- ADD EVENTS BUTTON -->
                         <div>
-                            <button type="button" class="eventsAddButton">Add Event Button</button>
+                            <button type="button" id="eventsAddButton">Add Event Button</button>
                         </div>  
-                        <!--!!!!!!!!!!!!!!!!!!!!!!!-->
-                        <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
-                        <section class="eventsList__Item">
-                            <!-- SINGLE EVENT DETAILS -->
-                            <div class="eventsList__Item__Content">
-                                <p>Event Name</p>
-                                <p>Event Location</p>
-                                <p>Event Date</p>
-                            </div>
-                            <!-- SINGLE EVENT DELETE BUTTON -->
-                            <div>
-                                <button type="button" class="eventsDeleteButton">Delete Event Button</button>
-                            </div>
-                        </section>
-                        <section class="eventsList__Item">
-                            <!-- SINGLE EVENT DETAILS -->
-                            <div class="eventsList__Item__Content">
-                                <p>Event Name</p>
-                                <p>Event Location</p>
-                                <p>Event Date</p>
-                            </div>
-                            <!-- SINGLE EVENT DELETE BUTTON -->
-                            <div>
-                                <button type="button" class="eventsDeleteButton">Delete Event Button</button>
-                            </div>
-                        </section>
-                        <section class="eventsList__Item">
-                            <!-- SINGLE EVENT DETAILS -->
-                            <div class="eventsList__Item__Content">
-                                <p>Event Name</p>
-                                <p>Event Location</p>
-                                <p>Event Date</p>
-                            </div>
-                            <!-- SINGLE EVENT DELETE BUTTON -->
-                            <div>
-                                <button type="button" class="eventsDeleteButton">Delete Event Button</button>
-                            </div>
-                        </section>
-                    </article>
+                        <!-- EVENTS LIST-->
+                        <article class="eventsList">
+                            
+                            <!--!!!!!!!!!!!!!!!!!!!!!!!-->
+                            <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
+                        </article>
+                    </div>
+
+                                         <!-- Tasks Form will initially be hidden -->
+                    <div class="newEventContainer popupForm hidden">
+                        <div class="showPopupContent">
+                        <form class="newEventForm">
+                            <label for="newEventName">Name of Event:  </label>
+                            <input id="newEventName" name="newEventName" type="text" placeholder="Event Name"></input>
+                            <label for="newEventLocation">Location of Event:  </label>
+                            <input id="newEventLocation" name="newEventLocation" type="text" placeholder="Event Location"></input>
+                            <label for="newEventDate">Location of Event:  </label>
+                            <input id="newEventDate" name="newEventDate" type="date"></input>
+                            <button id="submitNewEvent" type="button">Save</button>
+                            <button id="cancelNewEvent" type="button">Cancel</button>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-            </div>
+                <div class="blueline"></div>
 
             <!-- TASKS LISTS -->
             <div class="bottomContainer">
-                <div class="tasksList__Heading">
-                    <h2>"TASKS LIST Dont forget to Bring a Towel" (to complete your tasks)</h2>
-                    <div>
-                        <button type="button" class="tasksAddButton">Add Task Button</button>
+                <div class="listBorder">
+
+                    <div class="tasksList__Heading">
+                        <h2>"TASKS LIST Dont forget to Bring a Towel" (to complete your tasks)</h2>
+                        <div>
+                            <button type="button" class="tasksAddButton">Add Task Button</button>
+                        </div>
                     </div>
+                    <article class="tasksList">
+                        <!-- TASKS LIST HEADING -->
+                        <!-- ADD TASKS BUTTON-->
+
+                        <!--!!!!!!!!!!!!!!!!!!!!!!!-->
+                        <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
+                        <!-- SINGLE TASKS LIST ITEM, SHOULD CHECKBOX INPUT BE IN A FORM? -->
+
+                    </article>
                 </div>
-                <article class="tasksList">
-                    <!-- TASKS LIST HEADING -->
-                    <!-- ADD TASKS BUTTON-->
-
-                    <!--!!!!!!!!!!!!!!!!!!!!!!!-->
-                    <!-- THIS SECTION GENERATES DYNAMICALLY INSIDE OF HTML CONVERTER JS FILE-->
-                    <!-- SINGLE TASKS LIST ITEM, SHOULD CHECKBOX INPUT BE IN A FORM? -->
-
-                </article>
             </div>
                 <!-- Tasks Form will initially be hidden -->
                 <div class="newTaskContainer popupForm" class="hidden">
