@@ -48,8 +48,20 @@ const domObject = {
     //Sisi- end (task)
 
     eventComponent(eventObject) {
-        
-
+        const eventElement =
+        `
+        <section class="eventsList__Item">
+            <div class="eventsList__Item__Content">
+                <p><strong>Event:</strong>  ${eventObject.name}</p>
+                <p><strong>Location:</strong>  ${eventObject.location}</p>
+                <p><strong>Date:</strong>  ${eventObject.eventDate}</p>
+            </div>
+            <div>
+                <button type="button" id="eventsDeleteButton--${eventObject.id}">Delete</button>
+            </div>    
+        </section>
+    `
+    return eventElement
     },
 
     //Article HTML Generator
