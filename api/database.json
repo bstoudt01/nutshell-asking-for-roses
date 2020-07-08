@@ -1,0 +1,220 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Happy Gilmore",
+      "email": "1@abc.com",
+      "password": "1"
+    },
+    {
+      "id": 2,
+      "username": "Hollywood",
+      "email": "2@abc.com",
+      "password": "2"
+    },
+    {
+      "id": 3,
+      "username": "Big Daddy",
+      "email": "3@abc.com",
+      "password": "3"
+    },
+    {
+      "id": 4,
+      "username": "Last Man Standing",
+      "email": "4@abc.com",
+      "password": "4"
+    },
+    {
+      "email": "5@abc.com",
+      "username": "Little Nicky",
+      "password": "5",
+      "id": 5
+    }
+  ],
+  "articles": [
+    {
+      "userId": 2,
+      "url": "www.reuters.com/article/us-tesla-shares-breakingviews/breakingviews-tesla-market-milestone-puts-musk-pay-in-overdrive-idUSKBN2427ES",
+      "title": "Breakingviews - Tesla market milestone puts Musk pay in overdrive",
+      "synopsis": "Tesla beomes the most valuable car maker.",
+      "timestamp": 1693649630951,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "url": "www.usatoday.com/story/news/nation/2020/07/01/global-warming-has-wiped-out-6-500-years-cooling-study-says/5356154002/",
+      "title": "Recent global warming has wiped out 6,500 years of cooling, study says",
+      "synopsis": "Since the mid-19th century, global warming has climbed about 1 degree Celsius.",
+      "timestamp": 1793649630951,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "url": "www.usnews.com/news/news/articles/2020-07-07/nasa-adds-more-safety-fixes-for-boeings-crew-capsule",
+      "title": "NASA Adds More Safety Fixes for Boeing's Crew Capsule",
+      "synopsis": "NASA officials said they have identified 80 corrective actions for safety.",
+      "timestamp": 1893649630951,
+      "id": 3
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "Halloween Extravaganza",
+      "location": "nextEvents section",
+      "eventDate": "2022-10-31"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "name": "Crazy Party Time",
+      "location": "1st event in the events list",
+      "eventDate": "2023-01-22"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "name": "Brett Birthday",
+      "location": "2nd from the left? in events list",
+      "eventDate": "2023-02-21"
+    }
+  ],
+  "tasks": [
+    {
+      "userId": 2,
+      "name": "do the laundry",
+      "dueDate": "2022-02-02",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "name": " wash the car",
+      "completed": false,
+      "dueDate": "2022-04-04"
+    },
+    {
+      "userId": 1,
+      "name": "exercise!",
+      "dueDate": "2022-07-07",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "name": "ride the bike",
+      "dueDate": "2023-01-29",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "name": "mow the lawn",
+      "dueDate": "2022-12-30",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "name": "star in my own movie",
+      "dueDate": "2022-12-29",
+      "completed": false,
+      "id": 8
+    }
+  ],
+  "friends": [
+    {
+      "id": 2,
+      "userId": 3,
+      "followingId": 2
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "followingId": 3
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "followingId": 4
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "followingId": 4
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "followingId": 4
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "followingId": 3
+    },
+    {
+      "id": 8,
+      "userId": 4,
+      "followingId": 3
+    },
+    {
+      "id": 9,
+      "userId": 4,
+      "followingId": 2
+    },
+    {
+      "id": 10,
+      "userId": 1,
+      "followingId": 2
+    },
+    {
+      "id": 12,
+      "userId": 4,
+      "followingId": 1
+    },
+    {
+      "id": 12,
+      "userId": 3,
+      "followingId": 1
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "followingId": 1
+    },
+    {
+      "id": 13,
+      "userId": 5,
+      "followingId": 1
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "userId": 1,
+      "message": "Do you have any hockey wakaball things?!",
+      "timestamp": 1493642910329
+    },
+    {
+      "userId": 2,
+      "message": "Welcome to HollyWood!",
+      "timestamp": 1593642910329,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "message": "Hey Frankinstine, how many ketcup packets did you eat today?! ",
+      "timestamp": 1513642910329
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "message": "Toll Both Willy!!",
+      "timestamp": 1593642853902
+    }
+  ]
+}
